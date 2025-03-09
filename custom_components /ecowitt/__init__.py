@@ -30,7 +30,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: EcowittConfigEntry) -> b
         return await ecowitt.handler(request)
 
     webhook.async_register(
-        hass, DOMAIN, entry.title, entry.data[CONF_WEBHOOK_ID], handle_webhook
+        hass, DOMAIN, entry.title, entry.data[CONF_WEBHOOK_ID], handle_webhook,
+        allowed_methods=[METH_GET, METH_POST, METH_PUT]
     )
 
     @callback
