@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from aioecowitt import EcoWittListener
 from aiohttp import web
+from aiohttp.hdrs import METH_POST, METH_GET, METH_PUT
 
 from homeassistant.components import webhook
 from homeassistant.config_entries import ConfigEntry
