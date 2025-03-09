@@ -2,7 +2,7 @@
   "version": "2025.3.0",
   "domain": "ecowitt",
   "name": "Ecowitt",
-  "codeowners": ["@pvizeli"],
+  "codeowners": ["@GSzabados"],
   "config_flow": true,
   "dependencies": ["webhook"],
   "documentation": "https://www.home-assistant.io/integrations/ecowitt",
