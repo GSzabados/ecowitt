@@ -26,6 +26,11 @@ ECOWITT_BINARYSENSORS_MAPPING: Final = {
         device_class=BinarySensorDeviceClass.BATTERY,
         entity_category=EntityCategory.DIAGNOSTIC,
     ),
+    EcoWittSensorTypes.BATTERY_BINARY_INVERTED: BinarySensorEntityDescription(
+        key="BATTERY",
+        device_class=BinarySensorDeviceClass.BATTERY,
+        entity_category=EntityCategory.DIAGNOSTIC,
+    ),
 }
 
 
