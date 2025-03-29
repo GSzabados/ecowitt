@@ -209,8 +209,8 @@ ECOWITT_SENSORS_MAPPING: Final = {
         native_unit_of_measurement=UnitOfPressure.INHG,
         state_class=SensorStateClass.MEASUREMENT,
     ),
-    EcoWittSensorTypes.VPD: SensorEntityDescription(
-        key="VPD",
+    EcoWittSensorTypes.VPD_KPA: SensorEntityDescription(
+        key="VPD_KPA",
         device_class=SensorDeviceClass.PRESSURE,
         native_unit_of_measurement=UnitOfPressure.KPA,
         state_class=SensorStateClass.MEASUREMENT,
